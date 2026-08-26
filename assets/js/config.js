@@ -1,0 +1,2 @@
+// Add the NorthwestMeds Apps Script deployment ID or full /exec URL after deployment.
+(function(){window.NORTHWESTMEDS_DATA_SPREADSHEET_ID='1ePzaSsrhhNPmJItOYwHnVqOFieuXx1PiMvwN0izhte0';var value='AKfycbw51LgtzHXSoVZlOFzdbUCKVBj_f8dyUp8mqVS3V6agxRCKt8GSkh189xU8x1BWiDyj';window.NORTHWESTMEDS_DATA_API=value?(/^https:\/\/script\.google\.com\/macros\/s\//.test(value)?value:'https://script.google.com/macros/s/'+value.replace(/^\/+|\/+$/g,'')+'/exec'):''})()

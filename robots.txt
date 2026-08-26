@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /google-apps-script/
+Sitemap: https://www.northwestmeds.co.uk/sitemap.xml
