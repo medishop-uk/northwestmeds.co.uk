@@ -48,3 +48,5 @@
 .content-card:nth-child(3n+2) .card-art{background:linear-gradient(135deg,#176b5d,#d39a3a)}
 .article-content h2:after{background:var(--northwest-gold)}
 .medicine-action,.shop-card-footer span{background:var(--northwest-gold);color:#173b35}
+
+.source-fallback-nav{display:flex;align-items:center;gap:14px;flex-wrap:wrap;padding:12px max(20px,calc((100% - 1180px)/2));border-bottom:1px solid var(--line);background:#f8fbf9;font-size:12px}.source-fallback-nav strong{margin-right:8px}.source-fallback-nav a{color:var(--green);text-decoration:underline;text-underline-offset:3px}.source-index-links{justify-content:center}
