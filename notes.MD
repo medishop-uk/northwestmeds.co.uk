@@ -1,0 +1,1 @@
+convert slider headings from h2 to span keeping same size & style
