@@ -76,4 +76,18 @@ Redirect 301 /shop/medicine/rlam-alprazolam-1-mg https://www.northwestmeds.co.uk
 Redirect 301 /shop/medicine/sedil-diazepam-5-mg https://www.northwestmeds.co.uk/shop/medicine/sedil-diazepam-5-mg.html
 Redirect 301 /shop/medicine/zopiclone https://www.northwestmeds.co.uk/shop/medicine/zopiclone.html
 RedirectMatch 301 ^/shop/(midazolam-hypnofast-7\.5mg|pregabalin-neurabalin-75mg|nervasin-pregabalin|royal-tapentadol-225mg|aspa-tapentadol-200mg|nerodalam-lorazepam|etizolam|temazepam|co-codamol-500mg)/?$ https://www.northwestmeds.co.uk/shop/
-RedirectMatch 301 ^/shop/category/.*$ https://www.northwestmeds.co.uk/shop/
+
+# Canonical category URLs. REQUEST_URI captures the current web prefix, so these
+# redirects work at /northwestmeds.co.uk/ in XAMPP and at / after deployment.
+RewriteCond %{REQUEST_URI} ^(.*/shop/category/)adhd-(?:&|%26)-wakefulness(?:\.html)?$ [NC]
+RewriteRule ^ %1adhd-wakefulness.html [R=301,L,NE]
+RewriteCond %{REQUEST_URI} ^(.*/shop/category/)anxiety-and-panic-disorders(?:\.html)?$ [NC]
+RewriteRule ^ %1anxiety-panic-disorders.html [R=301,L,NE]
+RewriteCond %{REQUEST_URI} ^(.*/shop/category/)anxiety-and-seizure-disorders(?:\.html)?$ [NC]
+RewriteRule ^ %1anxiety-seizure-disorders.html [R=301,L,NE]
+RewriteCond %{REQUEST_URI} ^(.*/shop/category/)nerve-pain-(?:&|%26)-anxiety-related-medicines(?:\.html)?$ [NC]
+RewriteRule ^ %1nerve-pain-anxiety-medicines.html [R=301,L,NE]
+RewriteCond %{REQUEST_URI} ^(.*/shop/category/)sleep-(?:&|%26)-insomnia-medication(?:\.html)?$ [NC]
+RewriteRule ^ %1sleep-insomnia-medication.html [R=301,L,NE]
+RewriteCond %{REQUEST_URI} ^(.*/shop/category/)(adhd-wakefulness|anxiety-panic-disorders|anxiety-seizure-disorders|moderate-severe-pain|nerve-pain-anxiety-medicines|short-term-sedation|sleep-insomnia-medication)/?$ [NC]
+RewriteRule ^ %1%2.html [R=301,L,NE]
