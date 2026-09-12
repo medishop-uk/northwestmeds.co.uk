@@ -7,7 +7,6 @@
     'sedil-diazepam-5-mg.html': 'sedil.jpg',
     'rivotril-clonazepam-2mg.html': 'rivotril-2.jpg',
     'nitrazepam-noctin-5-mg.html': 'noctin.jpg',
-    'lorazepam-ativan-2-mg-n.html': 'lorazepam.jpg',
     'bromazepam.html': 'broze.jpg',
     'zopiclone.html': 'zopiclone-tablets.jpg'
   };
